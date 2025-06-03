@@ -1,0 +1,31 @@
+.archi{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #1da855;
+    width: 100%;
+    height: 150px;
+    background-color: #f2ffed;
+    padding: 10px;
+    /* color: ; */
+}
+
+.icon{
+    background-color: #1da855;
+    color: white;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+}
+.filer{
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    border-radius: 5px;
+    background-color: #f2ffed;
+}

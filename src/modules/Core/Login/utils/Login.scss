@@ -1,0 +1,32 @@
+$dark-side: #181818;
+$simple-side: #ffff;
+$danger-red: #d13d3d;
+$primary-green: "#57c3cf";
+$secondary-green: "#1DA822";
+
+.sub{
+    color: $simple-side;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: $primary-green;
+}
+.sub:hover{
+    background-color: $secondary-green;
+}
+.error-message{
+    color: $danger-red;
+    font-size: 14px;
+}
+.enlace a{
+    color: $green-company;
+}
+
+.back{
+    max-height: 100%;
+    height: 100%;
+    min-height: 550px;
+    width: 90%;
+    background-color: transparent;
+    border-radius: 30px;
+}
+

@@ -1,0 +1,28 @@
+.busca_campo{
+    height: 35px;
+}
+.tabs-container{
+    background-color: #f1f5f9;
+    // padding: 5px;
+    // width: 100%;
+    width: fit-content;
+    margin-top: 10px;
+    border-radius: 10px;
+
+    .tab-item{
+        margin: 5px;
+        color: #64748b;
+        cursor: pointer;
+        padding: 10px;
+        display: inline-flex;
+    }
+    .tab-item.active{
+        background-color: #ffff;
+        color: #1a1f2c;
+        
+        border-radius: 5px;
+    }
+    .tab-icon{
+        margin-right: 5px;
+    }
+}

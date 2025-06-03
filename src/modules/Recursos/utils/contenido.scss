@@ -1,0 +1,428 @@
+.barra{
+    padding: 8px;
+    .barra-item{
+        padding: 6px;
+        :hover{
+            cursor: pointer;
+        }
+    }
+}
+.franja-boton{
+    padding: 8px;
+
+    .boton-remover{
+        padding: 4px;
+        cursor: pointer;
+    }
+    .boton-agregar{
+        padding-inline: 12px;
+        padding-block: 4px;
+        cursor: pointer;
+    }
+}
+.menu-tipo{
+    display: flex;
+    justify-content: left;
+
+    .menu-tipo-item{
+        padding-inline: 16px;
+        padding-block: 8px;
+        left: 0;
+    }
+    
+}
+.texto-tipo{
+    margin-left: 10px;
+}
+
+// Estilos por tipo de contenido
+.caja-texto{
+    padding: 16px;
+}
+
+
+.caja-imagen{
+    padding: 32px;
+}
+
+.botones-archivo{
+    padding-inline: 12px;
+    padding-block: 4px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.boton-activo{
+    background-color: #1e2f3c;
+    color: white;
+}
+
+.campo-enlace{
+    padding: 8px;
+}
+
+.barra-imagen{
+    margin-top: 8px;
+    padding: 8px;
+}
+
+.error-carga{
+    padding: 16px;
+    color: #414141;
+}
+
+// Codigo
+.consola{
+    padding-inline: 16px;
+    padding-block: 8px;
+
+    .select-lenguaje{
+        padding-inline: 8px;
+        padding-bottom: 4px;
+    }
+
+    .boton-copiar{
+        margin-left: 8px;
+        padding-block: 4px;
+        padding-inline: 8px;
+        cursor: pointer;
+    }
+}
+.footer-codigo{
+    padding-inline: 16px;
+    padding-block: 8px;
+}
+
+/* styles/contentBlocks.css */
+
+.content-editor {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+/* Botones para agregar bloques */
+.add-block-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background-color: #f8fafc;
+  border-radius: 8px;
+  border: 2px dashed #cbd5e1;
+}
+
+.add-block-btn {
+  padding: 0.5rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background-color: white;
+  cursor: pointer;
+  font-size: 0.875rem;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.add-block-btn:hover {
+  background-color: #f3f4f6;
+  border-color: #9ca3af;
+  transform: translateY(-1px);
+}
+
+.add-block-btn:active {
+  transform: translateY(0);
+}
+
+/* Contenedor de bloques */
+.content-blocks {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.empty-content {
+  text-align: center;
+  padding: 2rem;
+  background-color: #f9fafb;
+  border-radius: 8px;
+  border: 2px dashed #d1d5db;
+  color: #6b7280;
+}
+
+/* Estilos generales para bloques */
+.content-block {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background-color: white;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.2s ease;
+}
+
+.content-block:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.block-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  background-color: #f9fafb;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.block-type {
+  font-weight: 600;
+  color: #374151;
+  font-size: 0.875rem;
+}
+
+.block-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.move-btn, .delete-btn {
+  padding: 0.25rem 0.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  background-color: white;
+  cursor: pointer;
+  font-size: 0.75rem;
+  transition: all 0.2s ease;
+}
+
+.move-btn:hover:not(:disabled) {
+  background-color: #3b82f6;
+  color: white;
+  border-color: #3b82f6;
+}
+
+.move-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.delete-btn:hover {
+  background-color: #ef4444;
+  color: white;
+  border-color: #ef4444;
+}
+
+/* Estilos específicos para bloque de texto */
+.text-block .content-textarea {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  resize: vertical;
+  font-family: inherit;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  outline: none;
+}
+
+.text-block .content-textarea:focus {
+  background-color: #fefefe;
+}
+
+/* Estilos específicos para bloque de código */
+.code-block .language-select {
+  padding: 0.25rem 0.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  background-color: white;
+  font-size: 0.75rem;
+  margin-right: 0.5rem;
+}
+
+.code-block .code-textarea {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  resize: vertical;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-size: 0.813rem;
+  line-height: 1.4;
+  background-color: #1f2937;
+  color: #f9fafb;
+  outline: none;
+}
+
+.code-block .code-textarea::placeholder {
+  color: #9ca3af;
+}
+
+/* Estilos específicos para bloque de imagen */
+.image-block .image-upload-area {
+  padding: 1rem;
+  text-align: center;
+}
+
+.upload-image-btn, .change-image-btn {
+  padding: 0.75rem 1.5rem;
+  border: 2px dashed #cbd5e1;
+  border-radius: 8px;
+  background-color: #f8fafc;
+  cursor: pointer;
+  font-size: 0.875rem;
+  color: #64748b;
+  transition: all 0.2s ease;
+}
+
+.upload-image-btn:hover, .change-image-btn:hover {
+  border-color: #3b82f6;
+  background-color: #eff6ff;
+  color: #3b82f6;
+}
+
+.image-preview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.preview-image {
+  max-width: 100%;
+  max-height: 300px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.image-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0 1rem 1rem;
+}
+
+.alt-text-input, .caption-input {
+  padding: 0.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  font-size: 0.875rem;
+}
+
+.alt-text-input:focus, .caption-input:focus {
+  border-color: #3b82f6;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+/* Estilos específicos para bloque de video */
+.video-block .video-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+
+.video-url-input, .video-title-input {
+  padding: 0.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  font-size: 0.875rem;
+}
+
+.video-url-input:focus, .video-title-input:focus {
+  border-color: #3b82f6;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.video-preview {
+  padding: 0 1rem 1rem;
+}
+
+.video-preview iframe {
+  border-radius: 8px;
+}
+
+/* Estilos específicos para bloque de lista */
+.list-block .list-type-select {
+  padding: 0.25rem 0.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  background-color: white;
+  font-size: 0.75rem;
+  margin-right: 0.5rem;
+}
+
+.list-items {
+  padding: 1rem;
+}
+
+.list-item-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.list-marker {
+  min-width: 1.5rem;
+  text-align: left;
+  font-weight: 600;
+  color: #6b7280;
+}
+
+.list-item-input {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  font-size: 0.875rem;
+}
+
+.list-item-input:focus {
+  border-color: #3b82f6;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.remove-item-btn {
+  padding: 0.25rem 0.5rem;
+  border: 1px solid #ef4444;
+  border-radius: 4px;
+  background-color: white;
+  color: #ef4444;
+  cursor: pointer;
+  font-size: 0.75rem;
+  transition: all 0.2s ease;
+}
+
+.remove-item-btn:hover {
+  background-color: #ef4444;
+  color: white;
+}
+
+.add-item-btn {
+  margin-left: 2rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid #10b981;
+  border-radius: 4px;
+  background-color: white;
+  color: #10b981;
+  cursor: pointer;
+  font-size: 0.875rem;
+  transition: all 0.2s ease;
+}
+
+.add-item-btn:hover {
+  background-color: #10b981;
+  color: white;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .add-block-buttons {
+    justify-content: center;
+  }
+  
+  .add-block-btn {
+    flex: 1;
+  }
+}

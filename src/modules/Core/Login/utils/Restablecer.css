@@ -1,0 +1,21 @@
+
+  @keyframes UpOpcri {
+    0% {
+      transform: translate(0, 0); /* Inicia con un desplazamiento negativo en X y 0 en Y */
+    }
+
+    50% {
+      transform: translate(-10px, -10px); /* Al final, el desplazamiento es igual en X y Y */
+    }
+
+    100% {
+        transform: translate(0, 0); /* Inicia con un desplazamiento negativo en X y 0 en Y */
+    }
+  }
+  
+  .plane {
+    margin-top: -20px;
+    margin-left: -10px;
+    animation: UpOpcri 1s ease;
+  }
+  

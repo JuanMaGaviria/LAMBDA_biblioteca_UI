@@ -1,0 +1,22 @@
+.navbar{
+    padding: 10px;
+}
+.men{
+    margin-left: 20px;
+}
+.men a{
+    margin: 10px;
+}
+
+.input_busqueda{
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+@media (max-width: 768px) {
+    .navbar{
+        width: 100%;
+    }
+}

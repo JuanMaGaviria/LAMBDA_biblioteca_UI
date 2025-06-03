@@ -1,0 +1,116 @@
+
+.download-panel {
+    margin: 0 auto;
+    text-align: center;
+}
+.dropdown-container {
+    position: relative;
+
+}
+
+.dropdown-btn {
+    font-size: 14px;
+    padding: 10px;
+    /* width: 100%; */
+    width: 45px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+    text-align: left;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: end;
+    margin-left: 10px;
+}
+
+.dropdown-arrow {
+    font-size: 14px;
+}
+
+.dropdown-list {
+    position: absolute;
+    top: 100%;
+    left: -145px;
+    width: 200px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    z-index: 10;
+} 
+.dropdown-item {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    border-bottom: 2px solid #ddd;
+}
+
+.dropdown-item:hover {
+    background-color: #f0f0f0;
+}
+
+.selected-option {
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+}
+
+.indicativo-b{
+    background-color: #4a5462;
+    width: 20px;
+    height: 20px;
+    color: white;
+    border-radius: 5px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.indicativo-s{
+    background-color: #e682ff;
+    width: 20px;
+    height: 20px;
+    color: white;
+    border-radius: 5px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.indicativo-n{
+    background-color: #3941fa;
+    width: 20px;
+    height: 20px;
+    color: white;
+    border-radius: 5px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.indicativo-total{
+    background-color: #181818;
+    width: 20px;
+    height: 20px;
+    color: white;
+    border-radius: 5px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}

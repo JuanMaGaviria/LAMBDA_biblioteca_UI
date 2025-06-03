@@ -1,0 +1,24 @@
+{
+    "titulo": "prueba",
+    "subtitulo": "",
+    "categoria": 1,
+    "area": 1,
+    "descripcion": "Contenido de prueba y mediciones",
+    "contenido": [
+        {
+            "posicion": 1,
+            "tipo_contenido": "texto",
+            "contenido_bloque": "El trozo de texto estándar de Lorem Ipsum usado desde el año 1500 es reproducido debajo para aquellos interesados. Las secciones 1.10.32 y 1.10.33 de por Cicero son también reproducidas en su forma original exacta, acompañadas por versiones en Inglés de la traducción realizada en 1914 por H. Rackham."
+        },
+        {
+            "posicion": 2,
+            "tipo_contenido": "codigo",
+            "contenido_bloque": "import React, { useState } from 'react';"
+        },
+        {
+            "posicion": 3,
+            "tipo_contenido": "imagen",
+            "contenido_bloque": "https://cms-assets.tutsplus.com/cdn-cgi/image/width=360/uploads/users/1223/posts/107068/image-upload/01_dashboard_ui_concept.jpeg"
+        }
+    ]
+}

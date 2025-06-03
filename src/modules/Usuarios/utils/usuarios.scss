@@ -1,0 +1,20 @@
+.perfil-label {
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.perfil-label.interno {
+    background-color: #cbe3ff; /* Color verde claro para 'Interno' */
+    color: #3d77c2;
+}
+
+.perfil-label.empresa {
+    background-color: #ffdd9d; /* Color gris para 'Empresa' */
+    color: #b97e24;
+}
+
+.perfil-label.desconocido {
+    background-color: #ffcccc; /* Color rojo claro para 'Desconocido' */
+    color: #a33c3c;
+}
